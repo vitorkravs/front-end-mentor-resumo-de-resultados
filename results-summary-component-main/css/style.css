@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'font-principal';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+}
+    
+body {   
+    font-family:'font-principal', sans-serif;
+}
+
+#container {
+    margin: 50px auto;
+    width: 700px;
+    height: 450px;
+    box-shadow: 10px 10px 20px 0.5px rgba(0, 0, 0, 0.261);
+    border-radius: 10px;
+}
+
+#resultado {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    border-radius: 20px;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+#resultado h1{
+    color: hsl(0, 0%, 90%);
+    font-size: 20px;
+    text-align: center;
+    margin: 25px auto;
+}
+
+#resultado h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#resultado p {
+    color: hsl(0, 0%, 80%);
+    text-align: center;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#circulo-resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: hsl(0, 0%, 80%);
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 180px;
+    height: 180px;
+    margin: 30px auto 30px;
+    border-radius: 50%;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#sumary {
+    float: right;
+    width: 50%;
+    height: 100%;
+    
+}
+
+#sumary h1 {
+    color: hsl(224, 30%, 27%);
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#todas-divisoes-sumary {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.divisoes-sumary {
+    border-radius: 10px;
+    line-height: 50px;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.divisoes-sumary h2 {
+    margin-left: 10px;
+    float: left;
+}
+.divisoes-sumary p {
+    margin-right: 10px;
+    float: right;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 30%);
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 30%);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 30%);
+}
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 30%);
+}
+
+#continue {
+    display: flex;
+    justify-content: center;
+}
+
+#continue button{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#continue button:hover {
+    cursor: pointer;
+    background: hsl(224, 30%, 27%);
+}
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 375px) {
+    #container {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    #resultado {
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: white;
+        border-radius: 0 0 20px 20px;
+        width: 375px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #sumary {
+        float: none;
+        width: 375px;
+    }
+
+    #sumary h1 {
+        margin-top: 0;
+    }
+
+    #continue button {
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 376px) and (max-width: 767.98px) {
+    #container {
+        margin: -25px auto 0;
+        box-shadow: none;
+        width: 375px;
+    }
+
+    #resultado {
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: white;
+        border-radius: 0 0 20px 20px;
+        width: 375px;
+        margin-bottom: 20px;
+        float: none;
+    }
+
+    #sumary {
+        float: none;
+        width: 375px;
+    }
+
+    #sumary h1 {
+        margin-top: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
